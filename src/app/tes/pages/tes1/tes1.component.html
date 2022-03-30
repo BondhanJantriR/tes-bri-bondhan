@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="row">
+    <div class="column">
+      <button (click)="onBack()">back</button>
+      <form style="margin-top: 20px;">
+        <label for="numberTes1">Inputing number:</label>
+        <input [(ngModel)]="numberOfData" type="number" id="numberTes1" name="numberTes1">
+        <button class="btn" (click)="onProccess()">
+          process
+        </button>
+      </form>
+    </div>
+    <div class="column">
+      <label><h2><b>Hasil : </b></h2></label>
+      <table>
+        <tr *ngFor="let d of data;let i=index ">
+          <td *ngIf="i%2==0" class="white">{{i+1}}</td>
+          <td *ngIf="i%2==1" class="grey">{{i+1}}</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>

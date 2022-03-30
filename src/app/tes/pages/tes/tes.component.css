@@ -1,0 +1,11 @@
+.container{
+    width: 90%;
+    margin:auto;
+    min-height:100%;
+    position:relative;
+    text-align: center;
+}
+
+.btn{
+    margin: 0 10px 0 10px;
+}

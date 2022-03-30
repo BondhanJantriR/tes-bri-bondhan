@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tes 4</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    .container {
+      display: flex;
+      background-color: black;
+    }
+
+    .center {
+      justify-content: center;
+    }
+
+    .wrapper {
+      width: 80%;
+      display: flex;
+      height: 100%;
+    }
+
+    /* start of sidebar */
+    .sidebar {
+      width: 20%;
+      height: 100%;
+      position: sticky;
+    }
+
+    .sidebar__brand {
+      color: #b1b1b1;
+      padding: 10px 0 15px 20px;
+      font-size: 35px;
+    }
+
+    .sidebar__item {
+      display: flex;
+      text-decoration: none;
+      padding: 10px 20px 10px 20px;
+
+    }
+
+    .sidebar__item:hover {
+      background-color: #626262;
+      border-radius: 100px;
+      width: fit-content;
+    }
+
+    .sidebar__item__icon {
+      display: flex;
+      align-items: center;
+      color: #b1b1b1;
+      font-size: 24px !important;
+    }
+
+    .sidebar__item__text {
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: center;
+      color: #b1b1b1;
+      padding-left: 25px;
+      font-weight: lighter;
+      font-size: 24px;
+    }
+
+    /* end of sidebar */
+
+    .content {
+      width: 80%;
+      height: 100vh;
+    }
+
+    /* start of navbar */
+    .navbar {
+      width: 100%;
+      height: 50px;
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: center;
+      background-color: rgba(black, 0.3);
+      position: sticky;
+      color: white;
+    }
+
+    .navbar-left {
+      width: 60%;
+      display: flex;
+      height: 100%;
+      border-left: 1px solid grey;
+      border-right: 1px solid grey;
+    }
+
+    .navbar-left__icon {
+      width: 15%;
+      font-size: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .navbar-left__label_text {
+      width: 50%;
+      margin-left: 15px;
+      font-size: 24px;
+    }
+
+    .navbar-left__label_text_header {
+      width: 100%;
+      margin-left: 15px;
+      font-size: 24px;
+    }
+
+    .navbar-left__label_text_detail {
+      width: 100%;
+      margin-left: 15px;
+      font-size: 12px;
+      color: grey;
+    }
+
+
+    .navbar-right {
+      width: 40%;
+      display: flex;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .navbar-right>input {
+      width: 90%;
+      border-radius: 100px;
+      padding-left: 10px;
+      line-height: 40px;
+      background-color: #b1b1b1;
+      outline: none;
+    }
+
+    input:focus {
+      outline: none;
+    }
+
+    /* end of navbar */
+
+    .content-wrapper {
+      width: 100%;
+      display: flex;
+    }
+
+    .main-content {
+      width: 60%;
+      border: 1px solid grey;
+    }
+
+    .side-content {
+      width: 40%;
+      display: flex;
+      height: fit-content;
+    }
+
+    .card {
+      width: 80%;
+      margin: 10px;
+      padding: 15px;
+      border: 1px solid grey;
+      border-radius: 10px;
+    }
+
+    .card>h3 {
+      color: white;
+    }
+
+    h3 {
+      color: white;
+    }
+
+    a {
+      color: blue;
+    }
+
+    a:link {
+      text-decoration: none;
+    }
+
+
+    a:visited {
+      text-decoration: none;
+    }
+
+
+    a:hover {
+      text-decoration: none;
+    }
+
+
+    a:active {
+      text-decoration: none;
+    }
+
+    .submenu a:hover {
+      color: gray !important;
+    }
+  </style>
+
+</head>
+
+<body>
+  <main class="container center">
+    <section class="wrapper">
+      <aside class="sidebar">
+        <section class="sidebar__brand">
+          <i class="fa fa-twitter"></i>
+        </section>
+        <a href="#" class="sidebar__item">
+          <i class="sidebar__item__icon fa fa-hashtag"></i>
+          <section class="sidebar__item__text">Explore</section>
+        </a>
+        <a href="#" class="sidebar__item">
+          <i class="sidebar__item__icon fa fa-cog"></i>
+          <section class="sidebar__item__text">Settings</section>
+        </a>
+      </aside>
+      <main class="content">
+        <nav class="navbar">
+          <main class="navbar-left">
+            <section class="navbar-left__icon">
+              <i class="fa fa-arrow-left"></i>
+            </section>
+            <section class="navbar-left__label_text">
+              <section class="navbar-left__label_text_header">
+                <b>Adobe</b> <i class="fa fa-check-circle"></i>
+              </section>
+              <section class="navbar-left__label_text_detail">
+                43.6K Tweets
+              </section>
+            </section>
+          </main>
+          <main class="navbar-right">
+            <input type="text" placeholder="Search Twitter">
+          </main>
+        </nav>
+        <main class="content-wrapper">
+          <section class="main-content">
+            <section class="main-content" style="width: 100%; border-style: none;">
+              <figure>
+                <img src="../../../../assets/images/background.png" alt="background" style="width: 100%; height: 200px;">
+              </figure>
+              <figure style="z-index: 1; position: absolute;">
+                <img src="../../../../assets/images/avatar.png" alt="profile"
+                  style="width: 150px; height: 150px; border-radius: 50%; border: 4px solid black; margin-top: -80px; margin-left: 15px;">
+              </figure>
+              <section class="card"
+                style="background-color: white; border-radius: 50px; width: 20%; margin-top: 25px; margin-left: 70%; padding: 7px;">
+                <h3 style="color: black;text-align: center;"><b>Follow</b></h3>
+              </section>
+              <article>
+                <h3 style="font-size: 30px; margin: 30px 0 0 20px;"><b>Adobe</b> <i class="fa fa-check-circle"></i></h3>
+                <p style="color:#626262; margin: 0 0 20px 20px;">@Adobe</p>
+                <p style="color: white; margin: 0 0 20px 20px;">Creativity doesn’t just open doors. It opens worlds.
+                  Join us in celebrating <a href="">#CreativityForAll</a>. Need help? Reach out to
+                  <a href="">@AdobeCare</a>
+                  .
+                </p>
+                <p style="color:#626262;margin:0 0 20px 20px"><i class="fa fa-map-marker"></i> Location: All over the
+                  world. <i class="fa fa-chain"></i> <a href="">adobe.com</a> <i class="fa fa-calendar"></i> Joined
+                  August 2009</p>
+                <p style="margin:0 0 20px 20px">
+                  <a href="" style="margin-right: 20px;color: #626262; ">222 Following</a> <a href=""
+                    style="color: #626262;">731.1K Followers</a>
+                </p>
+              </article>
+              <section style="display: flex;" class="submenu">
+                <a href=""
+                  style="width: 25%; text-align: center; color: white; margin: 15px 0 15px 0;"><b>Tweets</b></a>
+                <a href=""
+                  style="width: 25%; text-align: center; color: white; margin: 15px 0 15px 0;"><b>Tweets & replies</b></a>
+                <a href=""
+                  style="width: 25%; text-align: center; color: white; margin: 15px 0 15px 0;"><b>Media</b></a>
+                <a href=""
+                  style="width: 25%; text-align: center; color: white; margin: 15px 0 15px 0;"><b>Likes</b></a>
+              </section>
+            </section>
+          </section>
+          <section class="side-content center">
+            <section class="card" style="padding: 30px !important;">
+              <h3><b>New to Twitter?</b></h3>
+              <p style="font-size: 14px; color: grey; margin: 10px 0 0 0;">Sign up now to get your own personalized
+                timeline!</p>
+              <section class="card"
+                style="width: 90%; border-radius: 30px; background-color: whitesmoke; display: flex; padding: 5px; align-items: center;">
+                <figure style="width: 15%;">
+                  <img src="../../../../assets/images/img_avatar.png" alt="avatar"
+                    style="border-radius: 50%; width: 30px;">
+                </figure>
+                <section style="width: 70%;">
+                  <p style="color: black; font-size: 14px;"><b>sign as user</b></p>
+                  <p style="font-size:12px; color: #626262;">youremail@gmail.com <i class="fa fa-angle-down"></i></p>
+                </section>
+                <figure style="width: 15%; text-align: right; padding-right: 10px;">
+                  <img src="../../../../assets/images/google_icon.png" alt="google"
+                    style="border-radius: 50%; width: 25px; ">
+                </figure>
+              </section>
+              <section class="card"
+                style="width: 90%; border-radius: 30px; background-color: whitesmoke; display: flex; padding: 5px; align-items: center; justify-content: center;">
+                <figure style="padding: 0 10px 0 0;">
+                  <img src="../../../../assets/images/img_avatar.png" alt="avatar"
+                    style="border-radius: 50%; width: 30px; display: block;  margin: 0 auto;">
+                </figure>
+                <section>
+                  <p style="color: black; font-size: 14px;"><b>sign up with banana</b></p>
+                </section>
+              </section>
+              <section class="card"
+                style="width: 90%; border-radius: 30px; background-color: whitesmoke; padding: 5px; height: 28px; display: flex; align-items: center; justify-content: center;">
+                <p style="color: black; font-size: 14px;"><b>sign up with phone or email</b></p>
+              </section>
+              <p style="color: grey; font-size: 14px;">By signing up, you agree to the <a href="">Terms of Service</a>
+                and <a href="">Privacy Policy</a>, including <a href="">Cookie Use</a>.</p>
+            </section>
+          </section>
+        </main>
+      </main>
+    </section>
+  </main>
+</body>
+
+</html>

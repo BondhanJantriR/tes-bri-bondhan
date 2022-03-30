@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="row">
+    <div class="column">
+      <button (click)="onBack()">back</button>
+      <form style="margin-top: 20px;">
+        <label for="fibonacci">inputing number: </label>
+        <input type="text" id="fibonacci" [(ngModel)]="fibonacciNumber" name="fibo">
+        <button (click)="onFibonacci()">
+          proccess
+        </button>
+      </form>
+    </div>
+    <div class="column">
+      <label>
+        <h2><b>Hasil : </b></h2>
+      </label>
+      <textarea [(ngModel)]="fibonacciResult" name="fibonacci" id="fibonacci" cols="30" rows="10"></textarea>
+    </div>
+  </div>
+</div>
